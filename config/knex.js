@@ -1,5 +1,6 @@
+require('dotenv').config();
 module.exports = require('knex')({
-    client: 'mysql',
+    client: 'mysql2',
     connection: {
         host: process.env.db_host,
         user: process.env.db_username,
